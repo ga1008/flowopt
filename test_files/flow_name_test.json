@@ -1,0 +1,265 @@
+[
+  {
+    "name": "open chrome and enter vip url",
+    "method": "EnterUrl",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/BossZP/boss_zp/boss_zp/tools/CodeUrl.txt"
+    ],
+    "data_type": "file",
+    "data_sep": "***",
+    "take_method": "order-pop",
+    "speed": 0.01,
+    "pre_delay": 0,
+    "sub_delay": 1,
+    "not_locate": "exit"
+  },
+  {
+    "name": "search input box and click",
+    "method": "SearchClick",
+    "click_times": 2,
+    "click_sep": 0.1,
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/GXRC/vin_login_words.png"
+    ],
+    "deviation": [
+      10,
+      75
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": 0.3,
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "next1"
+  },
+  {
+    "name": "select all",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "ctrl",
+        "a"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "input username",
+    "method": "InputABC",
+    "take_method": "order",
+    "data_list": [
+      "DJDZSW",
+      "KKSJWLKJ",
+      "HBBWLKJ",
+      "JMWLKJ",
+      "DWWLKJ",
+      "QMWLKJ",
+      "ZDWLKJ",
+      "Guardian",
+      "SHDZSW"
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "quit",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "esc"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "search password input box and click ",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/GXRC/vin_login_words.png"
+    ],
+    "deviation": [
+      10,
+      160
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "next1"
+  },
+  {
+    "name": "select all",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "ctrl",
+        "a"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "input username",
+    "method": "InputABC",
+    "take_method": "order",
+    "data_list": [
+      "DJDZSW123456",
+      "KKSJWLKJ123456",
+      "HBBWLKJ123456",
+      "JMWLKJ123456",
+      "DWWLKJ123456",
+      "QMWLKJ123456",
+      "ZDWLKJ123456",
+      "Guardian89@RC",
+      "SHDZSW123456"
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "search login button and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/GXRC/login_bt.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": 0,
+    "sub_delay": 1,
+    "not_locate": "exit"
+  },
+  {
+    "name": "search cookie icon and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/GXRC/cookie_icon.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "exit"
+  },
+  {
+    "name": "search copy cookie icon and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/GXRC/copy_cookie.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "exit"
+  },
+  {
+    "name": "open terminal",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "ctrl",
+        "alt",
+        "t"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 1
+  },
+  {
+    "name": "write commands",
+    "method": "InputABC",
+    "take_method": "only",
+    "data_list": [
+      " redis-cli -a tizi2020 -n 0 rpush GrCookies '"
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "save data",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "ctrl",
+        "shift",
+        "v"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 1
+  },
+  {
+    "name": "write commands",
+    "method": "InputABC",
+    "take_method": "only",
+    "data_list": [
+      "'"
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "save data",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "enter"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0
+  },
+  {
+    "name": "quit terminal",
+    "method": "HotKey",
+    "take_method": "only",
+    "data_list": [
+      [
+        "ctrl",
+        "shift",
+        "q"
+      ]
+    ],
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "after": "jump1"
+  }
+]

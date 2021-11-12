@@ -1,0 +1,91 @@
+[
+  {
+    "name": "search chrome icon and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/LaGou/lg_web/lg_web/resource/flow_templates/chrome_icon.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0,
+      "check_region": [
+        0,
+        30,
+        100,
+        800
+      ]
+    },
+    "speed": 0.2,
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "exit"
+  },
+  {
+    "name": "search check btn and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/LaGou/lg_web/lg_web/resource/flow_templates/check_btn.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0,
+      "check_region": [200,300,1500,500]
+    },
+    "speed": 0.2,
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "next1"
+  },
+  {
+    "name": "search reflash btn and click",
+    "method": "SearchClick",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/LaGou/lg_web/lg_web/resource/flow_templates/re_flash_icon.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0,
+      "check_region": [
+        20,
+        30,
+        300,
+        100
+      ]
+    },
+    "speed": 0.2,
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "not_locate": "jump1"
+  },
+  {
+    "name": "wait page load",
+    "method": "WaitIcon",
+    "take_method": "only",
+    "data_list": [
+      "/home/ga/Guardian/For-TiZi/LaGou/lg_web/lg_web/resource/flow_templates/wpl_img3.png"
+    ],
+    "data_list_type": "array",
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0,
+      "check_region": [300,200,1500,300]
+    },
+    "speed": 0.1,
+    "pre_delay": 0,
+    "sub_delay": 0,
+    "interval": 0.5,
+    "time_out": 10,
+    "if_timeout": "exit"
+  }
+]

@@ -1,0 +1,93 @@
+[
+  {
+    "name": "search image and click",
+    "method": "SearchClick",
+    "icon_path": "/root/... .../image.png",
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": null,
+    "sub_delay": 2
+  },
+  {
+    "name": "search image with multi icons, if one of them matched, then click",
+    "method": "MulSearchClick",
+    "icon_paths": [
+      "/root/... .../image1.png",
+      "/root/... .../image2.png"
+    ],
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "speed": "fast",
+    "pre_delay": null,
+    "sub_delay": 2
+  },
+  {
+    "name": "open chrome and enter url",
+    "method": "EnterUrl",
+    "url": "http://www.xxx.com",
+    "speed": "fast",
+    "pre_delay": null,
+    "sub_delay": 2
+  },
+  {
+    "name": "wait the icon show",
+    "method": "WaitIcon",
+    "icon_path": "/root/... .../icon.png",
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "interval": 1,
+    "after_showed": "NextStep",
+    "time_out": 120,
+    "if_timeout": "End"
+  },
+  {
+    "name": "wait until the icon gone",
+    "method": "WaitIconGone",
+    "icon_path": "/root/... .../icon.png",
+    "match_options": {
+      "threshold_value": 90,
+      "as_gray": true,
+      "as_binary": false,
+      "img_shape_times": 1.0
+    },
+    "interval": 1,
+    "after_gone": "NextStep",
+    "time_out": 120,
+    "if_timeout": "End"
+  },
+  {
+    "name": "save data to a file with vim",
+    "method": "SaveWithVim",
+    "save_path": "/root/... .../icon.json"
+  },
+  {
+    "name": "terminal opera",
+    "method": "TermCommand",
+    "Command": "redis-cli -p xxxx rpush GrCookies 'diahwdioawafdoanwf;ona;owdaow'"
+  },
+  {
+    "name": "press hot key",
+    "method": "HotKey",
+    "key_list": ["ctrl", "c"]
+  },
+  {
+    "name": "move mouse to a position and click",
+    "method": "Click",
+    "position": "TopLeft",
+    "pre_delay": null,
+    "sub_delay": 2
+  }
+]
