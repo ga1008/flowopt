@@ -435,7 +435,7 @@ delay [ 0.0 ] seconds ...
      using template: [ 昵图网.png ]
      >>> locate success! score: 100.0
 ```  
-<img src="https://guardian-angel.oss-cn-shenzhen.aliyuncs.com/flowopt/Figure_1.png?versionId=CAEQKxiBgMCE4OLM6BciIDUxNjQ1NzIzNzU5MzRjZDlhZjkzNTk1MzYzZTg0Yzhi" alt="ilocate 样例">
+<img src="https://guardian-angel.oss-cn-shenzhen.aliyuncs.com/flowopt/Figure_1.png" alt="ilocate 样例">
 
 #### 2. 颜色定位工具  
 ```shell  
@@ -464,4 +464,4 @@ positions:
 ```  
 其中 positions 为匹配图像的中心点（可能有多个），即下图的黄色加号 + 的位置点
 
-<img src="https://guardian-angel.oss-cn-shenzhen.aliyuncs.com/flowopt/Figure_2.png?versionId=CAEQKxiBgICPzffM6BciIDhiNzEyNzY3ZWFlYjQ2ZjQ4NjJjMWYzYjIyNzY1ZDc1" alt="clocate 样例">
+<img src="https://guardian-angel.oss-cn-shenzhen.aliyuncs.com/flowopt/Figure_2.png" alt="clocate 样例">
