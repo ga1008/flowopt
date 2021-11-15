@@ -1698,7 +1698,6 @@ def start_missions():
                 fl.acquire()
                 load_mission_from_json(json_file)
                 fl.release()
-                print(f"waiting [ {red(args.interval)} ] to next loop ...")
                 time.sleep(args.interval)
                 waiting(
                     reset_time=args.interval,

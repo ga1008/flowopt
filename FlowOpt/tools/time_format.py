@@ -35,8 +35,7 @@ def tell_timestamp(time_str=None, str_format='%Y-%m-%d-%H-%M-%S'):
 
 
 def waiting(reset_time, warning, stop_wait_warning, wait_only=True, print_out=False):
-    rs_t = int(time.mktime(time.strptime(str(reset_time), "%Y-%m-%d %H:%M:%S")))
-    reset_wait = rs_t + 1 - int(time.time())
+    reset_wait = float(reset_time)
 
     def func(rw):
         print()
@@ -45,7 +44,7 @@ def waiting(reset_time, warning, stop_wait_warning, wait_only=True, print_out=Fa
             if print_out:
                 m, s = divmod(rw, 60)
                 h, m = divmod(m, 60)
-                print(f'warning: which is [ \033[1;31;48m{h}:{m}:{s}\033[0m ] later\r', end='')
+                print(f'warning: which is [ {hred(h + ":" + m + ":" + s)} ] later\r', end='')
             rw -= 1
             time.sleep(1)
         print()
